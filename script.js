@@ -13,12 +13,12 @@ function cuenta(tipo){
     result = eval(numero1) - eval(numero2);
     document.calc.resultado.value = result;
     }
-    if(tipo == "Division"){
+    if(tipo == "Dividir"){
     var result;
     result = eval(numero1) / eval(numero2);
     document.calc.resultado.value = result;
     }
-    if(tipo == "Multiplicacion"){
+    if(tipo == "Multiplicar"){
     var result;
     result = eval(numero1) * eval(numero2);
     document.calc.resultado.value = result;
