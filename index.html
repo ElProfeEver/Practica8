@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Matematicas</title>    
+</head>
+<body>
+    <form id="calc" name="calc">
+        <label for="">Numero 1</label>
+        <input type="number" id=txtnumero1" name="txtnumero1" value=""><br>
+        <label for="">Numero 2</label>
+        <input type="number" id="txtnumero2" name="txtnumero2" value=""><br>
+        <input type="Button" id="btn-enviar" name="btn-enviar" value="Sumar" onclick="sumar()">
+        <input type="text" id="resultado" name="resultado" value="0">
+    </form>    
+</body>
+<script>
+    function sumar() {
+    var num1;
+    num1 = document.calc.txtnumero1.value;
+    var num2;
+    num2 = document.calc.txtnumero2.value;
+    var opc;
+    opc = eval(num1) + eval(num2);
+    document.calc.resultado.value = opc;
+    }
+    </script>
+</html>
