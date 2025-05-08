@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operaciones Matematicas</title>    
+    <title>Operaciones Matematicas</title> 
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
-    <form id="calc" name="calc">
-        <label for="">Numero 1</label>
-        <input type="number" id=txtnumero1" name="txtnumero1" value=""><br>
-        <label for="">Numero 2</label>
-        <input type="number" id="txtnumero2" name="txtnumero2" value=""><br>
-        <input type="Button" id="btn-enviar" name="btn-enviar" value="Sumar" onclick="sumar()">
-        <input type="text" id="resultado" name="resultado" value="0">
-    </form>    
+    <div clas="formulario">
+        <form id="calc" name="calc">
+            <label for="">Numero1</label>
+            <input type="number" id="txtnumero1" name="txtnumero1" value="" class="numero"><br><br>
+            <label for="">Numero2</label>
+            <input type="number" id="txtnumero2" name="txtnumero2" value="" class="numero"><br><br>
+            <input type="button" id="btn-enviar" name="btn-enviar" value="Sumar" onclick="cuenta('Suma')">
+            <input type="button" id="btn-enviar" name="btn-enviar" value="Restar" onclick="cuenta('Resta')">
+            <input type="button" id="btn-enviar" name="btn-enviar" value="Dividir" onclick="cuenta('Dividir')">
+            <input type="button" id="btn-enviar" name="btn-enviar" value="Multiplicar" onclick="cuenta('Multiplicar')"><br><br>
+            <label for="">Resultado Operacion</label>
+            <input type="text" id="resultado" name="resultado" value="0">
+        </form>
+    </div>    
 </body>
 <script src="script.js"></script>
 </html>
